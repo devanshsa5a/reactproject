@@ -3,6 +3,8 @@ import './header.css'
 import amzonlogo from './56-565024_amazon-logo-png-amazon-png-transparent-png.png'
 // import PageviewIcon from '@material-ui/icons/Pageview'
 import SearchIcon from '@material-ui/icons/Search';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+
 function Header() {
     return (
         <div className="header">
@@ -10,7 +12,7 @@ function Header() {
 
             <div className="search_bar">
                 <input className="search_input" type="text" />
-                <SearchIcon />
+                <SearchIcon className="search__icon" />
             </div>
             <div className="header_nav">
                 <div className="header_option">
@@ -25,7 +27,13 @@ function Header() {
                     <span className="line_one">Your </span>
                     <span className="line_two">Prime</span>
                 </div>
-
+                <div className="header_baskt">
+                    <ShoppingBasketIcon />
+                    <span className="line_two header_basketCount">
+                        0
+                    </span>
+                </div>
+            
 
 
             </div>
